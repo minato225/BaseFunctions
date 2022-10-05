@@ -1,10 +1,17 @@
 import Test.HUnit
 import System.Exit
 import Factorial as F
+import GCD
 
 tests = test [  
-    "test1" ~: "(Factorial 1)" ~: 1 ~=? F.factorial 1,
-    "test2" ~: "(Factorial 10)" ~: 3628800 ~=? F.factorial 10 ]
+    -- Factorial
+    "Factorial 1"   ~: 1        ~=? F.factorial 1,
+    "Factorial 10"  ~: 3628800  ~=? F.factorial 10,
+
+    -- GCD
+    "GCD 2, 4" ~: 2 ~=? myGcd 2 4,
+    "GCD 1, 5" ~: 1 ~=? myGcd 1 5,
+    "GCD 3, 6" ~: 3 ~=? myGcd 3 6]
 
 main :: IO ()
 main = do

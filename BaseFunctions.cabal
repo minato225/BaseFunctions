@@ -26,6 +26,7 @@ source-repository head
 library
   exposed-modules:
       Factorial
+      GCD
       Lib
   other-modules:
       Paths_BaseFunctions
