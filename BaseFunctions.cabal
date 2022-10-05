@@ -25,6 +25,7 @@ source-repository head
 
 library
   exposed-modules:
+      Factorial
       Lib
   other-modules:
       Paths_BaseFunctions
@@ -51,7 +52,6 @@ test-suite BaseFunctions-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      Factorial
       Paths_BaseFunctions
   hs-source-dirs:
       test

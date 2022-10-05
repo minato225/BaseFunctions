@@ -1,4 +1,4 @@
-module Factorial where
+module Factorial(factorial) where
  
 factorial :: (Integral a) => a -> a  
 factorial 0 = 1
