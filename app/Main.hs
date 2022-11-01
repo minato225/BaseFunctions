@@ -1,8 +1,10 @@
 module Main (main) where
 
-import ListSum (lsum)
-import Lib
+import Task1.ListSum (lsum)
+
+arr::[Int] 
+arr = [1,2,3]
 
 main :: IO ()
 main = do
-    print $ lsum [1,2,3]
+    print $ lsum arr

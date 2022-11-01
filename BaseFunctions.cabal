@@ -25,11 +25,18 @@ source-repository head
 
 library
   exposed-modules:
-      Factorial
-      GCD
-      Lib
-      ListSum
-      Power
+      Task1.Collatz
+      Task1.CustomFibonacci
+      Task1.Delannoy
+      Task1.Factorial
+      Task1.Fibonacci
+      Task1.GCD
+      Task1.ListSum
+      Task1.MyClone
+      Task1.MyMod
+      Task1.PerfectNumber
+      Task1.Polynomial
+      Task1.Power
   other-modules:
       Paths_BaseFunctions
   autogen-modules:

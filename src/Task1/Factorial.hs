@@ -1,4 +1,4 @@
-module Factorial(factorial) where
+module Task1.Factorial(factorial) where
  
 factorial :: (Integral a) => a -> a  
 factorial 0 = 1

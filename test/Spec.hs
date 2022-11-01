@@ -1,13 +1,18 @@
-import Test.HUnit ((~=?),(~:),runTestTT, test, errors, failures)
-import System.Exit
-import Factorial as F
-import GCD
-import Power (power, fasterPower)
+import qualified Test.HUnit.Base
 
+import Test.HUnit ((~=?),(~:),runTestTT, test, errors, failures)
+import System.Exit ( exitFailure, exitSuccess )
+import Task1.Factorial ( factorial )
+import Task1.GCD ( myGcd )
+import Task1.Power ( power, fasterPower )
+import Task1.Fibonacci( getFib )
+import Task1.Collatz (collatz) 
+
+tests :: Test.HUnit.Base.Test
 tests = test [  
     -- Factorial
-    "Factorial 1"   ~: 1        ~=? F.factorial 1,
-    "Factorial 10"  ~: 3628800  ~=? F.factorial 10,
+    "Factorial 1"   ~: 1        ~=? factorial 1,
+    "Factorial 10"  ~: 3628800  ~=? factorial 10,
 
     -- GCD
     "GCD 2, 4" ~: 2 ~=? myGcd 2 4,
@@ -24,7 +29,13 @@ tests = test [
     "2^2" ~: 4 ~=? fasterPower 2 2,
     "1^1000" ~: 1 ~=? fasterPower 1 1000,
     "0^1000" ~: 0 ~=? fasterPower 0 1000,
-    "2^10" ~: 1024 ~=? fasterPower 2 10]
+    "2^10" ~: 1024 ~=? fasterPower 2 10,
+
+    -- Collatz
+    "7...1" ~: 17 ~=? collatz 7,
+
+    -- Fibonacci
+    "1,2,3,5,8" ~: 8 ~=? getFib 5]
 
 main :: IO ()
 main = do

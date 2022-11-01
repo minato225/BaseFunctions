@@ -1,5 +1,5 @@
-module ListSum (lsum, lmin) where
-import Data.Function
+module Task1.ListSum (lsum, lmin) where
+import Data.Function ( fix )
 
 lsumHelper :: Num a => ([a] -> a -> a) -> [a] -> a -> a
 lsumHelper _ [] s = s
