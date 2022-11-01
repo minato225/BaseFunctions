@@ -1,4 +1,4 @@
-cabal-version: 1.12
+cabal-version: 3.0
 
 -- This file has been generated from package.yaml by hpack version 0.35.0.
 --
@@ -12,7 +12,7 @@ bug-reports:    https://github.com/minato225/BaseFunctions/issues
 author:         Roman
 maintainer:     1815131@gmail.com
 copyright:      2022 Author name here
-license:        BSD3
+license:        BSD-3-Clause
 license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
@@ -28,7 +28,11 @@ library
       Factorial
       GCD
       Lib
+      ListSum
+      Power
   other-modules:
+      Paths_BaseFunctions
+  autogen-modules:
       Paths_BaseFunctions
   hs-source-dirs:
       src
@@ -40,6 +44,8 @@ library
 executable BaseFunctions-exe
   main-is: Main.hs
   other-modules:
+      Paths_BaseFunctions
+  autogen-modules:
       Paths_BaseFunctions
   hs-source-dirs:
       app
@@ -53,6 +59,8 @@ test-suite BaseFunctions-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      Paths_BaseFunctions
+  autogen-modules:
       Paths_BaseFunctions
   hs-source-dirs:
       test

@@ -1,7 +1,7 @@
 name:                BaseFunctions
 version:             0.1.0.0
 github:              "minato225/BaseFunctions"
-license:             BSD3
+license:             BSD-3-Clause
 author:              "Roman"
 maintainer:          "1815131@gmail.com"
 copyright:           "2022 Author name here"
@@ -9,6 +9,9 @@ copyright:           "2022 Author name here"
 extra-source-files:
 - README.md
 - CHANGELOG.md
+
+verbatim:
+  cabal-version: 3.0
 
 # Metadata used when publishing your package
 # synopsis:            Short description of your package
