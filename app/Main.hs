@@ -1,10 +1,7 @@
 module Main (main) where
 
-import Task1.ListSum (lsum)
-
-arr::[Int] 
-arr = [1,2,3]
+import MyClasses.MyEqClass(MyEq, ($==$), ($/=$))
 
 main :: IO ()
 main = do
-    print $ lsum arr
+    print $ 5 ($==$) 5

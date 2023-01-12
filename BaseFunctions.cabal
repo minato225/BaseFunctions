@@ -25,6 +25,7 @@ source-repository head
 
 library
   exposed-modules:
+      MyClasses.MyEqClass
       Task1.Collatz
       Task1.CustomFibonacci
       Task1.Delannoy

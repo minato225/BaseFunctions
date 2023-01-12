@@ -6,7 +6,7 @@ import Task1.Factorial ( factorial )
 import Task1.GCD ( myGcd )
 import Task1.Power ( power, fasterPower )
 import Task1.Fibonacci( getFib )
-import Task1.Collatz (collatz) 
+import Task1.Collatz (collatz)
 
 tests :: Test.HUnit.Base.Test
 tests = test [  
